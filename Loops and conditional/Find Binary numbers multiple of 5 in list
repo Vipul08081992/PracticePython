@@ -1,0 +1,13 @@
+def binaryTodecimal(b):
+    num=int(b,2)
+    return num
+items = []
+BNum=input("Enter the list of binary numbers.: \n")
+Blist= BNum.split(",")
+for x in Blist:
+  #  print(x)
+
+    num=binaryTodecimal(x)
+    if num % 5 == 0:
+        items.append(x)
+print(','.join(items))
