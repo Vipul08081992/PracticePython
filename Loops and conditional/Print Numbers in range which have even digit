@@ -1,0 +1,20 @@
+def digitalleven(num):
+        flag=True
+        while(num>0):
+            n=num%10
+            if n%2 != 0:
+                flag=False
+                break
+            num //=10
+
+        return flag
+
+s=(input("Enter the start and of series both will be included with comma")).split(",")
+result=[]
+for num in range(int(s[0]),int(s[1])+1):
+
+    if digitalleven(num):
+        num1=str(num)
+        result.append(num1)
+
+print(",".join(result))
