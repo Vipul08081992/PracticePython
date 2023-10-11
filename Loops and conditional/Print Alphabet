@@ -1,0 +1,89 @@
+#Print  shape of A
+def printA():
+    printA=""
+    for i in range(0,7):
+        for j in range(0,5):
+           if i == 0:
+               if j in (0,4):
+                   printA +=" "
+               else:
+                   printA +="*"
+           elif i == 3:
+               printA +="*"
+           else:
+               if j in (0,4):
+                   printA +="*"
+               else:
+                   printA +=" "
+        printA +="\n"
+    return printA
+
+# Print shape of D
+def printD():
+    printD=""
+    for i in range(0,7):
+        for j in range(0,5):
+            if i in (0,6):
+                if j == 4:
+                    printD += " "
+                else:
+                    printD += "*"
+            else:
+                if j in (0,4):
+                    printD += "*"
+                else:
+                    printD += " "
+        printD +="\n"
+    return printD
+# Print E
+def printE():
+    printE=""
+    for i in range(0,7):
+        for j in range(0,5):
+            if i in (0,3,6):
+                if i == 3 and j == 4:
+                    printE += " "
+                else:
+                    printE += "*"
+            else:
+                if j ==0:
+                    printE += "*"
+                else:
+                    printE += " "
+        printE +="\n"
+    print(printE)
+
+# Print G
+def printG():
+    printG=""
+    for i in range(0,7):
+        for j in range(0,5):
+            if i in (0,3,6):
+                if i == 3:
+                    if j == 1:
+                        printG += " "
+                    else:
+                        printG += "*"
+                else:
+                    if j in (0,4):
+                        printG += " "
+                    else:
+                        printG += "*"
+            elif i in (1,4,5):
+                if j in (0,4):
+                    printG += "*"
+                else:
+                    printG += " "
+            else:
+                if j == 0:
+                    printG += "*"
+                else:
+                    printG += " "
+        printG +="\n"
+    print(printG)
+printG()
+            
+
+
+
+
