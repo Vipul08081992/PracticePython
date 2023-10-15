@@ -1,0 +1,10 @@
+def factorial(num):
+    if num <0:
+        return "Enter the non-negative integer."
+    elif num == 0:
+        return 1
+    else:
+        return num * factorial(num-1)
+
+
+print(factorial(int(input("Enter number to find factorial: \n"))))
