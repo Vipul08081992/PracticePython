@@ -1,0 +1,10 @@
+def sumof_elementofList(eleList):
+    total=0
+    for x in eleList:
+        if type(x) == type([]):
+            total += sumof_elementofList(x)
+        else:
+            total += x
+
+    return total
+print("Sum of Elements: ",sumof_elementofList([1, 2, [3,4], [5,6]]))
