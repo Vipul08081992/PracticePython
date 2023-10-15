@@ -1,0 +1,11 @@
+#Q:Write a Python program to calculate the sum of a list of numbers. 
+def list_num(num_list):
+    if len(num_list) == 1:
+        return num_list[0]
+    else:
+        return num_list[0] + list_num(num_list[1:])
+
+nums = input("Enter the numbers of the list with comma sepration: \n")
+num_list_str = nums.split(",")
+num_list = [float(x) for x in num_list_str]
+print(list_num(num_list))
