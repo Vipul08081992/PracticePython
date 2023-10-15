@@ -1,0 +1,12 @@
+# Frequency of character
+def char_frequency(Str1):
+    dic ={}
+    for n in Str1:
+        keys = dic.keys()
+        if n in keys:
+            dic[n] +=1
+        else:
+            dic[n] =1
+    return dic
+
+print(char_frequency('google.com'))
