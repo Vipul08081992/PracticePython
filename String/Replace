@@ -1,0 +1,7 @@
+def replacewithdollar(str1):
+    c=str1[0]
+    str1= str1.replace(c,"$")
+
+    return c + str1[1:]
+
+print(replacewithdollar("restart"))
