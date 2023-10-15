@@ -1,0 +1,12 @@
+#Write a Python program to convert an integer to a string in any base.
+def integer_to_string(num,base):
+    a="0123456789ABCDEF"
+    Strlist=None
+    if num < base:
+        return a[num]
+    else:
+        return  integer_to_string(num //base, base) +a[num % base]
+
+num= int(input("Enter the number."))
+base = int(input("Enter the base."))
+print(integer_to_string(num,base))
