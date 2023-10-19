@@ -1,0 +1,11 @@
+
+def replaceStr(Strin):
+    Str1=Strin.lower()
+    inot =Str1.find("not")
+    ipoor =Str1.find("poor")
+    if inot <ipoor and inot >=0 and ipoor >= 0:
+        return Strin.replace(Strin[inot:(ipoor+4)],"good")
+    else:
+        return Strin
+
+print(replaceStr(input("Enter the string \n")))
