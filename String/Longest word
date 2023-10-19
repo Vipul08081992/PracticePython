@@ -1,0 +1,10 @@
+def longestword(ListStr):
+    longest=ListStr[0]
+    for i in ListStr:
+        if len(i) > len(longest):
+            longest=i
+
+    return f"Longest word is {longest} and it length is {len(longest)}"
+Str=input("Enter the list of words with comma:\n")
+ListStr=Str.split(",")
+print(longestword(ListStr))
