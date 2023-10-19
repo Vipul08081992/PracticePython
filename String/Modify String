@@ -1,0 +1,13 @@
+def adding(Str1):
+    if len(Str1) >=3:
+        if Str1[-3:] =="ing":
+            return Str1+"ly"
+        else:
+            return Str1+"ing"
+    else:
+        return Str1
+
+
+print(adding(input("Enter String to modify: \n")))
+
+
